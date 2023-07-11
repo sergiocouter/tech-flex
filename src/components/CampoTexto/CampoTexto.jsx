@@ -18,6 +18,7 @@ const EstiloInput = styled.input`
     font-size: 14px;
     line-height: 17px;
     margin-top: ${props => props.theme.espacamentos.xs};
+    margin-bottom: ${props => props.theme.espacamentos.s};
     background: ${props => props.theme.cores.branco};
     border: 1px solid ${props => props.theme.cores.secundarias.cor02};
     border-radius: ${props => props.theme.espacamentos.s};
