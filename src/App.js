@@ -7,14 +7,27 @@ import { ProvedorTema } from "./components/ProvedorTema/ProvedorTema";
 import { Rodape } from "./components/Rodape/Rodape";
 import { Tipografia } from "./components/Tipografia/Tipografia";
 import { Botao } from "./components/Botao/Botao";
+import  Logo  from "./img/logo-tech-flex.png";
+import { Link } from "./components/Link/Link";
 
 
 function App() {
   return (
       <ProvedorTema>
         <Estilos/>
-          <Cabecalho/>
-            <Container style={{margin:"80px auto"}}>
+          <Cabecalho>
+            <Container>
+              <Row align="center">
+                <Col>
+                  <img src={ Logo } alt="Logo do site" style={{width: "50px"}}/>
+                </Col>
+                <Col style={{ textAlign: 'right' }}>
+                  <Link>Login</Link>
+                </Col>
+              </Row>
+            </Container>
+          </Cabecalho>
+            <Container style={{margin:"50px auto"}}>
               <Row justify="center">
                 <Col lg={7} md={9} sm={12}>
                   <Card>
@@ -66,7 +79,11 @@ function App() {
                 </Col>
               </Row>
             </Container> 
-          <Rodape />     
+          <Rodape>
+            <Tipografia variante="h3" componente="h2">
+              @Desenvolvido por Sérgio Couter
+            </Tipografia>
+          </Rodape>     
       </ProvedorTema>
   );
 }

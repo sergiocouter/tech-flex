@@ -7,6 +7,7 @@ const EstiloLabel = styled.label`
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    color: ${props => props.theme.cores.branco}
 `
 
 const EstiloInput = styled.input`

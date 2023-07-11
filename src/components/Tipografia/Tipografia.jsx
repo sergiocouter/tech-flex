@@ -16,6 +16,8 @@ const estilos ={
         font-weight: 600;
         font-size: 40px;
         line-height: 49px;
+        color: white;
+        text-align: center;
     `,
     h2: `
         font-weight: 600;
@@ -31,6 +33,7 @@ const estilos ={
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
+        color: white;
     `,
     bodyBold: `
         font-weight: 700;
