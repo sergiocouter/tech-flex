@@ -14,7 +14,7 @@ const EstiloInput = styled.input`
     display: block;
     width: 100%;
     box-sizing: border-box;
-    height: 30px;
+    height: 40px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
