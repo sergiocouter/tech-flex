@@ -85,6 +85,9 @@ export const ListaSuspensa = ({titulo, opcoes}) => {
                     if (focoAntigo == null){
                         return 0;
                     }
+                    if(focoAntigo === opcoes.length -1){
+                        return opcoes.length -1
+                    }
                     return focoAntigo += 1
                 })
                 break;
@@ -104,7 +107,13 @@ export const ListaSuspensa = ({titulo, opcoes}) => {
                 setSelecionada(opcoes[foco])
 
                 break;
+            case "Tab":
+            case "Escape":
+                e.preventDefault();
+                setFoco(null)
+                setAberta(false)
         
+                break;
             default:
                 break;
         }
